@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   creator: `${siteData.author}`,
   publisher: `${siteData.author}`,
-  metadataBase: siteData.siteURL,
+  metadataBase: new URL(siteData.siteURL || ""),
   applicationName: `${siteData.name}`,
   appleWebApp: {
     title: `${siteData.name}`,
