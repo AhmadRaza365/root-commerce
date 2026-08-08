@@ -1,0 +1,227 @@
+.editor-container {
+  margin: 0;
+  border-radius: 2px;
+  color: var(--color-base-content);
+  position: relative;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.editor-inner {
+  background: var(--color-base-100);
+  border: 1px solid var(--color-base-content);
+  position: relative;
+}
+
+.editor-input {
+  min-height: 150px;
+  resize: none;
+  font-size: 15px;
+  caret-color: var(--color-base-content);
+  position: relative;
+  tab-size: 1;
+  outline: 0;
+  padding: 15px 10px;
+}
+
+.editor-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: inset 0 0 0 1px var(--color-accent);
+}
+
+.editor-placeholder {
+  color: var(--color-base-300);
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 15px;
+  left: 10px;
+  font-size: 15px;
+  user-select: none;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.editor-text-bold {
+  font-weight: bold;
+}
+
+.editor-text-italic {
+  font-style: italic;
+}
+
+.editor-text-underline {
+  text-decoration: underline;
+}
+
+.editor-text-strikethrough {
+  text-decoration: line-through;
+}
+
+.editor-text-underlineStrikethrough {
+  text-decoration: underline line-through;
+}
+
+.editor-link {
+  color: rgb(33, 111, 219);
+  text-decoration: none;
+}
+
+.editor-tokenPunctuation {
+  color: #999;
+}
+
+.editor-tokenProperty {
+  color: #905;
+}
+
+.editor-tokenSelector {
+  color: #690;
+}
+
+.editor-tokenOperator {
+  color: #9a6e3a;
+}
+
+.editor-tokenAttr {
+  color: #07a;
+}
+
+.editor-tokenVariable {
+  color: #e90;
+}
+
+.editor-tokenFunction {
+  color: #dd4a68;
+}
+
+.editor-paragraph {
+  margin: 0;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.editor-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.editor-heading-h1,
+.editor-heading-h2,
+.editor-heading-h3,
+.editor-heading-h4,
+.editor-heading-h5,
+.editor-heading-h6 {
+  margin: 0 0 8px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.editor-heading-h1 {
+  font-size: 2rem;
+}
+
+.editor-heading-h2 {
+  font-size: 1.75rem;
+}
+
+.editor-heading-h3 {
+  font-size: 1.5rem;
+}
+
+.editor-heading-h4 {
+  font-size: 1.25rem;
+}
+
+.editor-heading-h5 {
+  font-size: 1.125rem;
+}
+
+.editor-heading-h6 {
+  font-size: 1rem;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.editor-list-ol {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  list-style-type: decimal;
+}
+
+.editor-list-ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  list-style-type: disc;
+}
+
+.editor-listitem {
+  margin: 8px 32px 8px 32px;
+}
+
+.editor-nested-listitem {
+  list-style-type: none;
+}
+
+pre::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #999;
+}
+
+.toolbar {
+  display: flex;
+  margin-bottom: 1px;
+  background: var(--color-base-300);
+  padding: 4px;
+  border-top-left-radius: var(--radius-field);
+  border-top-right-radius: var(--radius-field);
+  vertical-align: middle;
+}
+
+.toolbar .divider {
+  width: 1.5px;
+  height: 30px;
+  background-color: var(--color-base-content);
+  opacity: 0.2;
+  margin: auto 4px;
+}
+
+.toolbar .toolbar-item .text {
+  display: flex;
+  line-height: 20px;
+  width: 200px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: var(--color-base-300);
+  text-overflow: ellipsis;
+  width: 70px;
+  overflow: hidden;
+  height: 20px;
+  text-align: left;
+}
+
+.toolbar .toolbar-item .icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  user-select: none;
+  margin-right: 8px;
+  line-height: 16px;
+  background-size: contain;
+}
